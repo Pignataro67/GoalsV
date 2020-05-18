@@ -1,4 +1,4 @@
-const goalURL = "/api/goals.json";
+const goalURL = "/api/goals"
 
 export function fetchGoals(){
   return (dispatch) => {
