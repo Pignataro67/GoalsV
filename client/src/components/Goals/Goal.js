@@ -14,7 +14,7 @@ class Goal extends React.Component {
           <p>{strategy}</p>
         <strong>Category:</strong>
             <p>{category}</p>
-        <button onClick={() => this.handleClick()}>Delete</button>
+        <button onClick={() => this.props.deleteGoal(this.props.id)}>Delete</button>
       </div>
     )
   }
