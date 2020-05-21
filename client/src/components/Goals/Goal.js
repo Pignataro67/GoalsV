@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
+import { Button, Grid } from 'semantic-ui-react';
 
 class Goal extends React.Component { 
   handleClick = () => {
     this.props.deleteGoal(this.props.id)
   }
 
-  render(){
+  render() {
     const {aim, strategy, category, key, objectives } = this.props;
     return(
-      <div className="Goal">
+      <div className="goal">
         <h3>{aim}</h3>
         <strong>Strategy:</strong>
           <p>{strategy}</p>
         <strong>Category:</strong>
             <p>{category}</p>
-        <button onClick={() => this.props.deleteGoal(this.props.id)}>Delete</button>
+        <Button basic color='red' size='mini' onClick={() => this.props.deleteGoal(this.props.id)}>Delete</Button>
       </div>
     )
   }

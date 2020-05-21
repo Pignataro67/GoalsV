@@ -9,6 +9,7 @@ import GoalsContainer from './containers/GoalsContainer';
 import { Container, Header } from 'semantic-ui-react';
 
 class App extends Component {
+  
   render() {	 
   return (
     <Container>
