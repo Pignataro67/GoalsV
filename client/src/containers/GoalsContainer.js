@@ -17,6 +17,7 @@ class GoalsContainer extends Component {
       <Container fluid textAlign='justified'>
         <GoalsList goals={this.props.goals} />  <GoalsList goals={this.props.goals} /> 
         <GoalInput />
+        <GoalsList goals={this.props.goals} deleteGoal={this.props.deleteGoal}/>
       </Container>
     )
   }
