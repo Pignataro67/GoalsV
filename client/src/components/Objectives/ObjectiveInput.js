@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-
 import { connect } from 'react-redux';
-import { Button, Form } from 'semantic-ui-react'
-import { addObjective } from '../../actions/objectivesActions'
+import { Button, Form } from 'semantic-ui-react';
+// import { addObjective } from '../../actions/objectivesActions;'
 
 class ObjectiveInput extends Component {
   constructor() {
@@ -40,3 +39,5 @@ class ObjectiveInput extends Component {
     )
   }
 }
+
+export default ObjectiveInput;
